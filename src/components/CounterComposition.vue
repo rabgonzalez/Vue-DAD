@@ -1,28 +1,13 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <h2>Composition</h2>
-            <h3>{{ counter }}</h3>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <input class="d-block text-center m-auto" type="numberic" id="contador" v-model="counter">
-            </div>
-            <div class="col-12 col-md">
-                <button class="btn btn-primary" @click="increment">Incrementar</button>
-            </div>
-            <div class="col-12 col-md">
-                <button class="btn btn-primary" @click="decrease">Disminuir</button>
-            </div>
-            <div class="col-12 col-md">
-                <button class="btn btn-success" @click="double">Multiplicar por 2</button>
-            </div>
-            <div class="col-12 col-md w-100">
-                <button class="btn btn-danger" @click="reiniciar">Reiniciar</button>
-            </div>
-            <p v-if="counter > 10">¡El valor es alto!</p>
-        </div>
+    <div class="composition">
+        <h2>Composition</h2>
+        <h3>{{ counter }}</h3>
+        <input class="d-block text-center m-auto mb-3" type="numberic" id="contador" v-model="counter">
+        <button class="btn btn-primary ms-3" @click="increment">Incrementar</button>
+        <button class="btn btn-primary ms-3" @click="decrease">Disminuir</button>
+        <button class="btn btn-success ms-3" @click="double">Multiplicar por 2</button>
+        <button class="btn btn-danger ms-3"  @click="reiniciar">Reiniciar</button>
+        <p v-if="counter > 10">¡El valor es alto!</p>
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <CounterOption />
   <CounterComposition />
+  <CounterOption />
 </template>
 
 <script setup>
